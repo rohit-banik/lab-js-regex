@@ -1,34 +1,31 @@
-<html> 
-<head> 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Validation</title>
-    <script src="app.js"></script>
-    <link rel="stylesheet" href="style.css">
-</head> 
-<body> 
-<h2 style="text-align: center"> FORM VALIDATION</h2>           
-<form name="RegForm" action="/" onsubmit="return formValidate()" method="post">  
-    <p>Name : <input type="text" name="Name"></p>
-     <label class="alert" id="name"></label><br>  
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2 style="text-align: center">FORM VALIDATION</h2>
+    <form action="" onsubmit="return formValidate()" method="post">
+      <p>Name : <input type="text" id="name" /></p>
+      <label class="alert" id="nameerror"></label>
 
-    <p> Address : <input type="text" name="Address">  </p>
-     <label class="alert" id="address"></label><br> 
+      <p>Address : <input type="text" id="address" /></p>
+      <label class="alert" id="addresserror"></label>
+      <p>E-mail : <input type="text" id="email" /></p>
+      <label class="alert" id="emailerror"></label>
+      <p>Password : <input type="password" id="password" /></p>
+      <label class="alert" id="passworderror"></label>
 
-    <p>E-mail : <input type="text"  name="EMail"></p>
-     <label class="alert" id="email"></label><br> 
+      <p>Confirm Password : <input type="password" id="cpassword" /></p>
+      <label class="alert" id="cpassworderror"></label>
 
-    <p>Password : <input type="password" name="Password"> </p>
-    <label class="alert" id="pwd"></label><br> <br> 
+      <p>Phone : <input type="number" id="phone" /></p>
+      <label class="alert" id="phoneerror"></label>
 
-    <p>Confirm Password : <input type="password" name="cPassword"> </p>
-    <label class="alert" id="cpwd"></label><br> <br>
-
-    <p>Phone : <input type="number" name="phone"> </p>
-    <label class="alert" id="phone"></label><br> <br>   
-
-    <p><input type="submit" value="Check" name="Submit"></p><br>   
-
-</form> 
-</body> 
+      <p><input type="submit" value="Check" name="Submit" /></p>
+    </form>
+    <script src="./app.js"></script>
+  </body>
 </html>

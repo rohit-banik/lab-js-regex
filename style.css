@@ -1,4 +1,12 @@
-   
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;500;600;700&display=swap');   
+
+*{
+    font-family: 'Edu SA Beginner', cursive;
+}
+
+body{
+    background: rgb(93, 255, 187);
+}
 div {  
     box-sizing: border-box; 
     width: 100%; 
@@ -9,21 +17,37 @@ form {
     margin: 0 auto; 
     width: 600px;
     text-align: center;
-    border: 1px Solid black;
-    background-color: aliceblue;
+    padding: 20px;
+    background-color: rgba(205, 255, 148, 0.397);
+    font-size: 20px;
+    border-radius: 20px;border: 1px solid rgb(114, 255, 196);
 }
 
 form>p{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
 
 }
 input{
-    width: 300px;
-    margin-left: 2%;
     float: inline-end;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: 18px;
+}
+input[type=submit]{
+    background: green;
+    color: white;
+    text-transform: uppercase;
+}
+input[type=submit]:hover{
+    background: white;
+    color: green;
 }
 .alert{
     color: red;
+    text-transform: uppercase;
+    font-weight: 900;
 }
